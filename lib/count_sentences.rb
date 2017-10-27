@@ -29,5 +29,6 @@ class String
   def count_sentences
     array1 = self.split(". ")
     array2 = self.split("? ")
+    array3 = self.split("! ")
   end
 end
