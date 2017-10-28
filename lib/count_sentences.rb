@@ -30,6 +30,10 @@ class String
     array1 = self.split(". ")
     array2 = self.split("? ")
     array3 = self.split("! ")
-    count = array1.length + array2.length + array3.length - 2
+    if array1.length == 0 && array2.length ==0 && array3.length ==0
+      count = 0
+    else
+      count = array1.length + array2.length + array3.length - 2
+    end
   end
 end
